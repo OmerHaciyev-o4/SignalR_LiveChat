@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SocialNetwork.WebUI",
+    "\\SocialNetwork.WebUI\\Views",
+    "\\SocialNetwork.WebUI\\Views\\Shared",
+    "\\SocialNetwork.WebUI\\Views\\Shared\\Components",
+    "\\SocialNetwork.WebUI\\Views\\Shared\\Components\\CreateRoom"
+  ],
+  "SelectedNode": "\\SocialNetwork.WebUI\\Views\\Shared\\Components\\CreateRoom\\Default.cshtml",
+  "PreviewInSolutionExplorer": false
+}

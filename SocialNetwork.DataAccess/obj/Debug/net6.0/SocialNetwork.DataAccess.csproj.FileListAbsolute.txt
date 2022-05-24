@@ -1,0 +1,12 @@
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.DataAccess\bin\Debug\net6.0\SocialNetwork.DataAccess.deps.json
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.DataAccess\bin\Debug\net6.0\SocialNetwork.DataAccess.dll
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.DataAccess\bin\Debug\net6.0\SocialNetwork.DataAccess.pdb
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.DataAccess\obj\Debug\net6.0\SocialNetwork.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.DataAccess\obj\Debug\net6.0\SocialNetwork.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.DataAccess\obj\Debug\net6.0\SocialNetwork.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.DataAccess\obj\Debug\net6.0\SocialNetwork.DataAccess.AssemblyInfo.cs
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.DataAccess\obj\Debug\net6.0\SocialNetwork.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.DataAccess\obj\Debug\net6.0\SocialNetwork.DataAccess.dll
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.DataAccess\obj\Debug\net6.0\refint\SocialNetwork.DataAccess.dll
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.DataAccess\obj\Debug\net6.0\SocialNetwork.DataAccess.pdb
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.DataAccess\obj\Debug\net6.0\ref\SocialNetwork.DataAccess.dll

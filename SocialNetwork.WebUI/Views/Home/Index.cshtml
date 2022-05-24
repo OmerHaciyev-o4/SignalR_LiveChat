@@ -1,0 +1,67 @@
+﻿@model SocialNetwork.WebUI.Models.HomeUserViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="w-100 d-flex flex-row flex-wrap">
+    <img class="me-2" src="/images/@ViewBag.User.ImageUrl" style="border-radius:50%;width:50px;height:50px;" />
+    <h2>@ViewBag.User.UserName</h2>
+</div>
+
+@*<div class="container">
+    <div class="row">&nbsp;</div>
+
+    <div class="row">
+        <div class="col-2">message</div>
+        <div class="col-4"><input type="text" id="messageinput" /></div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">
+            <input type="button" id="sendbutton" value="send message" />
+        </div>
+    </div>
+</div>*@
+
+<div class="row">
+    <div class="col-12">
+        <hr />
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <ul id="messagesList"></ul>
+    </div>
+</div>
+
+<div class="row">
+    <div id="allUsers" class="col-md-10">
+
+   @* @foreach (var user in Model.AllUsers)
+    {
+            <div class="card" style="width: 14rem;">
+               
+                   
+              @if(user.IsOnline){
+                <img style="border:5px solid green;" class="card-img-top" src="~/images/@user.ImageUrl" alt="Card image cap">
+
+              }
+              else{
+                <img style="border:5px solid red;" class="card-img-top" src="~/images/@user.ImageUrl" alt="Card image cap">
+
+              }
+            <div class="card-body">
+                <h5 class="card-title">@user.UserName</h5>
+                <p class="card-text">@user.Email</p>
+                <a href="/home/FindCurrentUser/@user.Id" class="btn btn-primary">Send</a>
+            </div>
+        </div>
+    }*@
+    </div>
+     <div id="activeUsers" class="col-md-2">
+    </div>
+</div>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
+<script src="~/js/site.js"></script>

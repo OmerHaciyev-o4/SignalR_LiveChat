@@ -1,0 +1,135 @@
+﻿@using System.Reflection.Metadata
+@model SocialNetwork.WebUI.Models.CreateRoomViewModel
+
+<button type="button" class="active nav-link border-0 bg-transparent text-dark" data-toggle="modal" data-target="#createRoomModal">Create Room</button>
+<div class="modal fade" id="createRoomModal" tabindex="-1" aria-labelledby="createRoomModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createRoomModalLabel">New Room</h5>
+                <button type="button" class="border-0 bg-transparent text-dark" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form asp-controller="Home" class="modal-body d-flex flex-column flex-wrap" method="post" enctype="multipart/form-data" role="form">
+                <input type="text" asp-for="UseRoom.RoomName" class="w-100 p-1 text-dark mb-3" placeholder="Enter room name"/>
+                <span asp-validation-for="UseRoom.RoomName"></span>
+                
+                @*<label>Upload room image</label>*@
+                <input type="file" asp-for="File" class="w-100 text-dark"/>
+                
+                <div class="w-100 mt-2 d-flex flex-row flex-wrap overflow-hidden" style="max-height: 40vh;">
+                    <div class="w-50" style="max-height: 40vh; overflow-y: scroll" id="allUsersForNewRoom">
+                        @foreach (var identityUser in Model.IdentityUsers)
+                        {
+                            <div class="w-100 d-flex flex-row flex-wrap m-0 p-0" onclick="addUser('@identityUser.Id')" id="@identityUser.Id">
+                                <img class="rounded-circle m-0 mt-1 me-2" src="/images/@identityUser.ImageUrl" style="width: 35px; height: 35px;"/>
+                                <p class="mt-2 mb-2">@identityUser.UserName</p>
+                            </div>;
+                        }
+                    </div>
+                    <div class="w-50" style="max-height: 40vh; overflow-y: scroll" id="selectedUsers">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+                    
+<script>
+    function removeUser(id) {
+        var allUser = document.getElementById("allUsersForNewRoom");
+        var selectedUsers = document.getElementById("selectedUsers");
+        var childNodes = document.getElementById("selectedUsers").childNodes;
+
+        var childNode = undefined;
+
+        for (var i = 0; i < childNodes.length; i++) {
+            if (childNodes[i].id === id) {
+                childNode = childNodes[i];
+                break;
+            }
+        }
+
+        if (childNode != null && childNode != undefined) {
+            childNode.onclick = function() {
+                addUser(this.id);
+            }
+            allUser.appendChild(childNode);
+            selectedUsers.removeChild(childNode);
+
+            var selectedUsersList = [];
+
+            for (var i = 0; i < selectedUsers.childNodes; i++) {
+                selectedUsersList.push(selectedUsers.childNodes[i].id);
+            }
+
+            postData(selectedUsersList);
+        }
+    }
+
+    function addUser(id) {
+        var allUser = document.getElementById("allUsersForNewRoom");
+        var selectedUsers = document.getElementById("selectedUsers");
+        var childNodes = document.getElementById("allUsersForNewRoom").childNodes;
+
+        var childNode = undefined;
+
+        for (var i = 0; i < childNodes.length; i++) {
+            if (childNodes[i].id === id) {
+                childNode = childNodes[i];
+                break;
+            }
+        }
+
+        if (childNode != null && childNode != undefined) {
+            childNode.onclick = function() {
+                removeUser(this.id);
+            }
+            selectedUsers.appendChild(childNode);
+            allUser.removeChild(childNode);
+
+            var selectedUsersList = [];
+
+            for (var i = 0; i < selectedUsers.childNodes; i++) {
+                selectedUsersList.push(selectedUsers.childNodes[i].id);
+            }
+
+            postData(selectedUsersList);
+        }
+    }
+
+    function postData(selectedUsersList) {
+        console.log("Yrrrrrrr");
+        $.ajax({
+            type: "POST",
+            url: "/Home/SelectedUsers",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(selectedUsersList),
+            dataType: "json",
+            success: function(response) {
+                console.log(response);
+            }
+        });
+
+
+        //$.ajax({
+        //    url: "/Home/SelectedUsers",
+        //    method: "POST",
+        //    data: JSON.stringify(selectedUsersList),
+        //    dataType: "application/json",
+        //    success: function (response) {
+        //        console.log(response);
+        //        console.log("yes");
+        //    },
+        //    error: function (err) {
+        //        console.log(err);
+        //        console.log("no");
+        //    }
+        //});
+    }
+</script>

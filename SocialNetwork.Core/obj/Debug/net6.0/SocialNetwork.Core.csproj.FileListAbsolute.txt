@@ -1,0 +1,14 @@
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\bin\Debug\net6.0\SocialNetwork.Core.deps.json
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\bin\Debug\net6.0\SocialNetwork.Core.runtimeconfig.json
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\bin\Debug\net6.0\SocialNetwork.Core.dll
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\bin\Debug\net6.0\SocialNetwork.Core.pdb
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\obj\Debug\net6.0\SocialNetwork.Core.csproj.AssemblyReference.cache
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\obj\Debug\net6.0\SocialNetwork.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\obj\Debug\net6.0\SocialNetwork.Core.AssemblyInfoInputs.cache
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\obj\Debug\net6.0\SocialNetwork.Core.AssemblyInfo.cs
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\obj\Debug\net6.0\SocialNetwork.Core.csproj.CoreCompileInputs.cache
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\obj\Debug\net6.0\SocialNetwork.Core.dll
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\obj\Debug\net6.0\refint\SocialNetwork.Core.dll
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\obj\Debug\net6.0\SocialNetwork.Core.pdb
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\obj\Debug\net6.0\SocialNetwork.Core.genruntimeconfig.cache
+C:\Users\Omero4\Source\Repos\SocialNetworkCustom\SocialNetwork.Core\obj\Debug\net6.0\ref\SocialNetwork.Core.dll
